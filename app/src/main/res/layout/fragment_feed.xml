@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <EditText
+        android:id="@+id/etSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Başlık veya açıklama ara..."
+        android:inputType="text"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Tür seçimi (basit) -->
+    <Spinner
+        android:id="@+id/spType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btnSort"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sırala: Yeni → Eski"
+        android:layout_marginTop="8dp"/>
+
+
+    <!-- Filtreler -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <CheckBox
+            android:id="@+id/cbOnlyOpen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Açık" />
+
+        <CheckBox
+            android:id="@+id/cbFollowed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Takip"
+            android:layout_marginStart="12dp"/>
+
+        <CheckBox
+            android:id="@+id/cbAdminArea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yetkim"
+            android:layout_marginStart="12dp"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvFeed"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"/>
+</LinearLayout>

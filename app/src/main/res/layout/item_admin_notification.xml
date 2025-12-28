@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:layout_marginBottom="10dp"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/tvATitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Başlık"
+        android:textStyle="bold"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/tvAType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tür: -"
+        android:layout_marginTop="4dp"/>
+
+    <TextView
+        android:id="@+id/tvADesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Açıklama"
+        android:layout_marginTop="4dp"/>
+
+    <TextView
+        android:id="@+id/tvACreator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kullanıcı: -"
+        android:layout_marginTop="4dp"/>
+
+    <TextView
+        android:id="@+id/tvAUnit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Birim: -"
+        android:layout_marginTop="4dp"/>
+
+    <TextView
+        android:id="@+id/tvALocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Konum: -"
+        android:layout_marginTop="4dp"/>
+
+    <TextView
+        android:id="@+id/tvATime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Zaman: -"
+        android:layout_marginTop="4dp"/>
+
+    <Spinner
+        android:id="@+id/spStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"/>
+    <Button
+        android:id="@+id/btnTerminate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Yanlış/Uygunsuz → Sonlandır (Sil)"
+        android:layout_marginTop="8dp"/>
+
+</LinearLayout>

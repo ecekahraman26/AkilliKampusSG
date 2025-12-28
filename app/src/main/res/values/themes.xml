@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.AkilliKampusSG" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- İstersen buraya renk/primary vs ekleriz -->
+    </style>
+
+</resources>

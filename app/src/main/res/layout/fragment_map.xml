@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Offline map area (kampüs alanı) -->
+    <FrameLayout
+        android:id="@+id/mapCanvas"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#EEE7D9"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Kampüs haritası arka plan resmi -->
+        <ImageView
+            android:id="@+id/ivCampusMap"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/atu_kampus_map"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="false"/>
+
+
+    </FrameLayout>
+
+    <!-- Zoom butonları -->
+    <LinearLayout
+        android:id="@+id/zoomControls"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:background="@android:color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="12dp">
+
+        <Button
+            android:id="@+id/btnZoomIn"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:text="+" />
+
+        <Button
+            android:id="@+id/btnZoomOut"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:text="-"
+            android:layout_marginTop="6dp" />
+    </LinearLayout>
+
+    <!-- Mini bilgi kartı -->
+    <LinearLayout
+        android:id="@+id/mapInfoCard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:background="@android:color/white"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="12dp">
+
+        <TextView
+            android:id="@+id/tvInfoTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Başlık"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvInfoType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tür: -"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:id="@+id/tvInfoTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Oluşturulma: -"
+            android:layout_marginTop="4dp" />
+
+        <Button
+            android:id="@+id/btnViewDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Detayı Gör"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/btnCloseCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kapat"
+            android:layout_marginTop="6dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
