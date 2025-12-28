@@ -40,4 +40,4 @@ Notification API
 Git & GitHub
 
 Not
-Bu proje eğitim amaçlı geliştirilmiştir.
+Bu proje eğitim amaçlı geliştirilmiştir...
